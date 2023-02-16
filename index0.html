@@ -160,11 +160,9 @@
 		   var num=document.getElementById("mn").value;
 		   var msg=document.getElementById("msg").value;
 		   Email.send({
-				Host: "smtp.gmail.com",
-				Username: "noreply.wa2@gmail.com",
-				Password: "Bvidhey@012",
-				To: "vidhey.bhogadi2003@gmail.com",
-				From: "noreply.wa2@gmail.com",
+				SecureToken : "01391d1d-4c56-443a-9d9b-00572ff5d9c5",
+                To : 'vidhey.bhogadi2003@gmail.com',
+                From : "vidheywebsites@gmail.com",
 				Subject: "'Vidhey's Whatsapp website' new User Detected !",
 				Body: "<div style='text-align:center;'><img src='https://vidhey-wa.netlify.app/title_logo.png' height='200px' width='200px'/><br/><br/><h1><u>User</u> <u>Details</u> :</h1><table border='0' style='margin-left:auto; margin-right:auto;'><tr><td><b>Mobile Number</b></td><td>:</td><td><b>" + num + "</b></td></tr><tr><td><b>Message</b></td><td>:</td><td><b>" + msg + "</b></td></tr></table></div>",
 			});
